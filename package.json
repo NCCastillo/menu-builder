@@ -1,5 +1,7 @@
 {
   "name": "menu-builder",
   "private": true,
-  "dependencies": {}
+  "dependencies": {
+    "react-on-rails": "^10.1.1"
+  }
 }
