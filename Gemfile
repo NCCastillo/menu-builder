@@ -26,7 +26,8 @@ gem 'turbolinks', '~> 5'
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 gem 'jbuilder', '~> 2.5'
 gem 'react_on_rails', '~> 10.1', '>= 10.1.1'
-gem "bulma-rails"
+gem 'bulma-rails'
+gem 'foreman'
 # Use Redis adapter to run Action Cable in production
 # gem 'redis', '~> 3.0'
 # Use ActiveModel has_secure_password
