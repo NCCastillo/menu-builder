@@ -28,6 +28,7 @@ gem 'jbuilder', '~> 2.5'
 gem 'webpacker'
 gem 'react_on_rails', '~> 10.1', '>= 10.1.1'
 gem 'bulma-rails'
+gem 'font-awesome-sass', '~> 5.0.6'
 gem 'foreman'
 # Use Redis adapter to run Action Cable in production
 # gem 'redis', '~> 3.0'
