@@ -1,0 +1,7 @@
+$orange: hsl(39, 100%, 50%) !default;
+
+.navbar {
+  &.is-orange {
+    background-color: $orange;
+  }
+}
