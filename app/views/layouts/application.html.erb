@@ -9,6 +9,49 @@
   </head>
 
   <body>
-    <%= yield %>
+    <%= render partial: "layouts/header" %>
+
+    <div class="columns is-fullheight">
+      <div class="column is-2 is-sidebar-menu is-hidden-mobile">
+        <aside class="menu">
+          <p class="menu-label">
+            <span class="icon">
+              <i class="far fa-file-alt fa-lg"></i>
+            </span>
+            Menu
+          </p>
+          <ul class="menu-list">
+            <li>
+              <a>Current Menu</a>
+            </li>
+            <li><a>Your Menus</a></li>
+            <li><a>Create Menu</a></li>
+          </ul>
+          <p class="menu-label">
+            <span class="icon">
+              <i class="fas fa-utensils fa-lg"></i>
+            </span>
+            Meal
+          </p>
+          <ul class="menu-list">
+            <li><a>Your Meals</a></li>
+            <li><a>Create Meal</a></li>
+          </ul>
+          <p class="menu-label">
+            <span class="icon">
+              <i class="fas fa-address-card fa-lg"></i>
+            </span>
+            Account
+          </p>
+          <ul class="menu-list">
+            <li><a>Edit</a></li>
+            <li><a>Log Out</a></li>
+          </ul>
+        </aside>
+      </div>
+      <div class="column">
+        <%= yield %>  
+      </div>
+    </div>
   </body>
 </html>

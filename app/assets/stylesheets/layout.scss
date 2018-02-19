@@ -1,0 +1,24 @@
+//not sure why bulma colors not being pulled from main @import bulma in application.scss
+// need to look into
+
+$grey:                hsl(0, 0%, 48%) !default;
+$grey-lighter:        hsl(0, 0%, 86%) !default;
+$grey-light-lighter:  hsl(0, 0%, 91%) !default;
+$grey-dark:           hsl(0, 0%, 29%) !default;
+$white:               hsl(0, 0%, 100%) !default;
+
+$navbar-height: 3.25rem;
+
+.columns {
+  &.is-fullheight {
+    min-height: calc(100vh - ( #{$navbar-height} - .75rem ) );
+    max-height: calc(100vh - ( #{$navbar-height} - .75rem ) );
+    display: flex;
+    flex-direction: row;
+    justify-content: stretch;
+  }
+  .is-sidebar-menu {
+    padding: 2.25rem;
+    background: $grey-lighter;
+  }
+}
