@@ -1,0 +1,16 @@
+<%= form_for @menu do |f| %>
+  <div class="field">
+    <%= f.label :week_of, class: "label" %>
+    <div class="control">
+      <%= f.text_field :week_of, class: "input" %>  
+    </div>
+  </div>
+  <div class="field is-grouped">
+    <div class="control">
+      <%= f.submit "Create", class: "button is-link" %>  
+    </div>
+    <div class="control">
+      <%= link_to "Cancel", :back, class: "button is-text" %>  
+    </div>
+  </div>
+<% end %>
