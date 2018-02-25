@@ -25,7 +25,9 @@
               <a>Current Menu</a>
             </li>
             <li><a>Your Menus</a></li>
-            <li><a>Create Menu</a></li>
+            <li>
+              <%= link_to "Create Menu", new_menu_path %>
+            </li>
           </ul>
           <p class="menu-label">
             <span class="icon">
@@ -49,8 +51,23 @@
           </ul>
         </aside>
       </div>
-      <div class="column">
-        <%= yield %>  
+      <div class="column is-10">
+        <% if flash.present? %>
+          <section class="section">
+            <% flash.each do |key, msg| %>
+            <%# need to add is-warning and is-danger classes here %>
+              <%= content_tag :div, id: key, class: ["notification", "is-success"] do %>
+                 <button class="delete"></button>
+                 <%= msg %>
+              <% end%>
+            <% end %>    
+            
+          </section>
+        <% end %>
+        
+        <section class="section">
+          <%= yield %>  
+        </section>
       </div>
     </div>
   </body>
